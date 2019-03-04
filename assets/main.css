@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-height: 900px) {
+  font-size: 10vw;
+}
+
+
+main {
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  */
+}
+
+.background {
+  position: fixed;
+  left: -50%;
+  top: -50%;
+  min-width: 200%;
+  min-height: 200%;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  min-height: 50%;
+  min-width: 50%;
+}
+
+// .text {
+//   position: fixed;
+//   z-index: 10;
+// }
+
+.text {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+
+.logo {
+  width: 14em;;
+  flex-shrink: 0;
+  margin-bottom: 3em;
+  margin-right: 0.4em; /* Align with the text. */
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.icon {
+  padding: 1em;
+  width: 5.5em;
+  transition: padding 0.2s;
+}
+
+.icon:hover, .icon:focus  {
+  outline: none;
+  padding-top: 0em;
+  padding-bottom: 2em;
+}
+
+.icon svg {
+  fill: white;
+  width: 100%;
+  display: block;
+}
+
+h1, p {
+  margin: 0;
+  line-height: 1;
+}
+
+p {
+  font-size: 4em;
+}
+
+h1 {
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-size: 8em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 16vw;
+  }
+
+  p {
+    font-size: 8vw;
+  }
+}
